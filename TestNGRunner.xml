@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="GoogleSearch" parallel="tests" thread-count="3">
+
+	<test name="WIN10TEST_FF">
+		<parameter name="browser" value="Firefox" />
+		<parameter name="version" value="64.0" />
+		<classes>
+			<class name="com.cucumber.tests.TestNGRunCucumberTest" />
+		</classes>
+	</test>
+
+	<test name="WIN10TEST_CHROME">
+		<parameter name="browser" value="Chrome" />
+		<parameter name="version" value="71.0" />
+		<classes>
+			<class name="com.cucumber.tests.TestNGRunCucumberTest" />
+		</classes>
+	</test>
+
+</suite>
